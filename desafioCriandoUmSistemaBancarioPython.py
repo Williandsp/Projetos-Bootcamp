@@ -42,13 +42,13 @@ def sacar():
     excedeu_saques = numero_saques >= LIMITE_SAQUES
 
     if excedeu_saldo:
-        print("Operação falhou! Você não tem saldo suficiente.")
+        print("Você não tem saldo suficiente.")
 
     elif excedeu_limite:
-        print("Operação falhou! O valor do saque excede o limite de R$ 500,00.")
+        print(" O valor do saque excede o limite de R$ 500,00.")
 
     elif excedeu_saques:
-        print("Operação falhou! Número máximo de saques excedido.")
+        print("Número máximo de saques excedido.")
 
     elif valor > 0:
         saldo -= valor
@@ -56,7 +56,7 @@ def sacar():
         numero_saques += 1
 
     else:
-        print("Operação falhou! O valor informado é inválido.")
+        print("O valor informado é inválido.")
 
 
 def imprimir_extrato():
@@ -87,4 +87,4 @@ while True:
         break
 
     else:
-        print("Operação inválida, por favor selecione novamente a operação desejada.")
+        print("Opção inválida, por favor selecione novamente a operação desejada.")
